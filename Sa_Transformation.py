@@ -210,6 +210,13 @@ class Window(QWidget):
 
                 print("Transformation_Matrix=\n",Transformation)
 
+                n=np.shape(self.matrixA)[0]
+
+                Cloud_estim = np.transpose(np.dot(R, np.transpose(A))) + np.tile(T, (n, 1))
+
+
+
+
 
 def main():
     app = QApplication(sys.argv)

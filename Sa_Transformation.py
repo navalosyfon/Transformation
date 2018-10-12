@@ -197,22 +197,36 @@ class Window(QWidget):
                 messagebox.exec_()
 
             if sender.country == "Transformation Report":
-                transfo = RigiTransformation3D(self.matrixA, self.matrixA)
+                transfo = RigiTransformation3D(self.matrixA, self.matrixB)
                 R, T = transfo.rigid_transform_3D()
 
-                T=T.reshape((1,3))
+                T=T.reshape((3,1))
                 R=R.reshape((3,3))
-                Transformation = np.zeros((4, 4))
-                Hom_coord= np.array([0,0,0,1])
-                Hom_coord= Hom_coord.reshape((4,1))
 
-                Transformation = np.concatenate((np.concatenate((R, T), axis=0),Hom_coord),axis=1)
+                Hom_coord = np.array([0, 0, 0, 1])
+                Hom_coord = Hom_coord.reshape((1, 4))
+                Transformation = np.concatenate((np.concatenate((R, T), axis=1),Hom_coord),axis=0)
 
                 print("Transformation_Matrix=\n",Transformation)
 
-                n=np.shape(self.matrixA)[0]
+                n= np.shape(self.matrixA)[0]
+                Homm_coord_to_matrixA = np.ones((n, 1))
+                MatrixA_Homm = np.concatenate((self.matrixA, Homm_coord_to_matrixA), axis=1)
+                To_align_Matrix_estim = np.dot(Transformation, np.transpose(MatrixA_Homm))
+                To_align_Matrix_estim =To_align_Matrix_estim.T
+                To_align_Matrix_estim = np.delete(To_align_Matrix_estim,(3),axis=1)
+                print("To_align_Matrix_estim=\n",To_align_Matrix_estim)
 
-                Cloud_estim = np.transpose(np.dot(R, np.transpose(A))) + np.tile(T, (n, 1))
+
+                err = To_align_Matrix_estim - self.matrixB
+
+                resi = err
+                # print(resi)
+                err = np.multiply(err, err)
+                err = np.sum(err)
+                rmse = np.sqrt(err / n)
+
+                print("RMSE=",rmse*1000," mm")
 
 
 

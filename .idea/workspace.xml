@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8a753ab-8fc4-4d20-9e1d-97bfdbaeccc5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logging.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sa_Transformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sa_Transformation.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
@@ -15,55 +17,61 @@
     <session id="-1067500682">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="894" />
-          <entry key="txt" value="30" />
+          <entry key="py" value="943" />
+          <entry key="txt" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="30" />
-          <entry key="Python" value="894" />
+          <entry key="PLAIN_TEXT" value="139" />
+          <entry key="Python" value="943" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="2" />
+          <entry key="py" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="2" />
+          <entry key="Python" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sa_Transformation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="224" column="43" lean-forward="true" selection-start-line="224" selection-start-column="43" selection-end-line="224" selection-end-column="43" />
+            <state relative-caret-position="423">
+              <caret line="159" column="41" selection-start-line="159" selection-start-column="41" selection-end-line="159" selection-end-column="41" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#160#932#0" />
+                <element signature="e#955#1935#0" />
+                <element signature="e#1967#2498#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../TransfoProject/SUVTransfo.py">
+        <entry file="file://$PROJECT_DIR$/Logging.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="174" column="4" lean-forward="true" selection-start-line="174" selection-start-column="4" selection-end-line="180" selection-end-column="27" />
+            <state relative-caret-position="810">
+              <caret line="47" column="31" selection-start-line="23" selection-start-column="8" selection-end-line="47" selection-end-column="31" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,21 +86,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/../TransfoProject/SUVTransfo.py" />
+        <option value="$PROJECT_DIR$/Logging.py" />
         <option value="$PROJECT_DIR$/Sa_Transformation.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="263" />
-    <option name="y" value="-1223" />
-    <option name="width" value="626" />
-    <option name="height" value="666" />
+    <option name="x" value="420" />
+    <option name="y" value="440" />
+    <option name="width" value="785" />
+    <option name="height" value="835" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -104,7 +114,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -123,6 +132,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.Sa_Transformation">
+    <configuration name="Logging" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Transformation_" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Logging.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="SUVTransfo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Transformation_" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,10 +198,12 @@
     <list>
       <item itemvalue="Python.SUVTransfo" />
       <item itemvalue="Python.Sa_Transformation" />
+      <item itemvalue="Python.Logging" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Sa_Transformation" />
+        <item itemvalue="Python.Logging" />
         <item itemvalue="Python.SUVTransfo" />
       </list>
     </recent_temporary>
@@ -194,16 +226,22 @@
       <option name="project" value="LOCAL" />
       <updated>1539338420493</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add of the parameter of the estimation (RMSE, Residuals) &amp;&amp; add to data files PB et Bo.txt">
+      <created>1539355257767</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539355257767</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-1208" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.13087249" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12550336" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Python Console" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
@@ -219,7 +257,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.45095947" />
+      <window_info anchor="right" id="Run" order="5" weight="0.33355704" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -227,25 +265,36 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add estimaation parameters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add estimaation parameters" />
+    <MESSAGE value="Add of the parameter of the estimation (RMSE, Residuals) &amp;&amp; add to data files PB et Bo.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add of the parameter of the estimation (RMSE, Residuals) &amp;&amp; add to data files PB et Bo.txt" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../TransfoProject/SUVTransfo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
           <caret line="174" column="4" lean-forward="true" selection-start-line="174" selection-start-column="4" selection-end-line="180" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sa_Transformation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="224" column="43" lean-forward="true" selection-start-line="224" selection-start-column="43" selection-end-line="224" selection-end-column="43" />
+        <state relative-caret-position="423">
+          <caret line="159" column="41" selection-start-line="159" selection-start-column="41" selection-end-line="159" selection-end-column="41" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#160#932#0" />
+            <element signature="e#955#1935#0" />
+            <element signature="e#1967#2498#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="47" column="31" selection-start-line="23" selection-start-column="8" selection-end-line="47" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

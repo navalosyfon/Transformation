@@ -16,6 +16,7 @@ class QTextEditLogger(logging.Handler):
         self.widget.appendPlainText(msg)
 
 
+
 class MyDialog(QtWidgets.QDialog, QtWidgets.QPlainTextEdit):
     def __init__(self, parent=None):
         super().__init__(parent)

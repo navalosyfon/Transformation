@@ -1,6 +1,9 @@
 from PyQt5.QtWidgets import *
+from PyQt5 import QtWidgets
 import sys
 import numpy as np
+import logging
+
 import pandas as pd
 
 
@@ -101,6 +104,18 @@ class Page2(QWizardPage):
 
         self.setLayout(layout)
 
+class QTextEditLogger(logging.Handler):
+    def __init__(self, parent):
+        super().__init__()
+        self.widget = QtWidgets.QPlainTextEdit(parent)
+        self.widget.setReadOnly(True)
+
+    def emit(self, record):
+        msg = self.format(record)
+        self.widget.appendPlainText(msg)
+
+
+
 class Window(QWidget):
     def __init__(self,parent=None):
         super(Window, self).__init__(parent)
@@ -139,6 +154,35 @@ class Window(QWidget):
         radiobutton.country = "Transformation Report"
         radiobutton.toggled.connect(self.on_radio_button_toggled)
         layout.addWidget(radiobutton, 0, 2)
+
+
+
+        logTextBox = QTextEditLogger(self)
+        # You can format what is printed to text box
+        # logTextBox.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+        logging.getLogger().addHandler(logTextBox)
+        # You can control the logging level
+        logging.getLogger().setLevel(logging.DEBUG)
+
+        self._button = QPushButton()
+        self._button.setText('Test Me')
+
+        layout = QtWidgets.QVBoxLayout()
+        # Add the new logging box widget to the layout
+        layout.addWidget(logTextBox.widget)
+        layout.addWidget(self._button)
+        self.setLayout(layout)
+
+        # Connect signal to slot
+        self._button.clicked.connect(self.test)
+
+    def test(self):
+        logging.debug('damn, a bug___')
+        logging.debug("salut salut")
+        logging.info('something to remember')
+        logging.warning('that\'s not right')
+        logging.error('foobar')
+
 
         self.show()
 

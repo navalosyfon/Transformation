@@ -198,6 +198,7 @@ class Window(QWidget):
                 logging.debug(line)
         f.close()
 
+
         n = np.shape(self.matrixA)[0]
         Homm_coord_to_matrixA = np.ones((n, 1))
         MatrixA_Homm = np.concatenate((self.matrixA, Homm_coord_to_matrixA), axis=1)

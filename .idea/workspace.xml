@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8a753ab-8fc4-4d20-9e1d-97bfdbaeccc5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Transformation_.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Transformation_.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sa_Transformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sa_Transformation.py" afterDir="false" />
-    </list>
+    <list default="true" id="f8a753ab-8fc4-4d20-9e1d-97bfdbaeccc5" name="Default Changelist" comment="3" />
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,8 +50,8 @@
       <file leaf-file-name="Sa_Transformation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sa_Transformation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="194" column="35" selection-start-line="194" selection-start-column="35" selection-end-line="194" selection-end-column="35" />
+            <state relative-caret-position="374">
+              <caret line="194" column="71" selection-start-line="194" selection-start-column="71" selection-end-line="194" selection-end-column="71" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
                 <element signature="e#160#932#0" />
@@ -226,19 +220,32 @@
       <option name="project" value="LOCAL" />
       <updated>1539355257767</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding Qdebug V2">
+      <created>1539708135160</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539708135160</updated>
+    </task>
+    <task id="LOCAL-00004" summary="3">
+      <created>1539708847215</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539708847215</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1216" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12679163" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Python Console" order="1" />
-      <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.3076075" />
+      <window_info anchor="right" id="Run" order="5" weight="0.3076075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -260,7 +267,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add estimaation parameters" />
     <MESSAGE value="Add of the parameter of the estimation (RMSE, Residuals) &amp;&amp; add to data files PB et Bo.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add of the parameter of the estimation (RMSE, Residuals) &amp;&amp; add to data files PB et Bo.txt" />
+    <MESSAGE value="Adding Qdebug V2" />
+    <MESSAGE value="3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Sa_Transformation.py">
@@ -298,8 +307,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sa_Transformation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="194" column="35" selection-start-line="194" selection-start-column="35" selection-end-line="194" selection-end-column="35" />
+        <state relative-caret-position="374">
+          <caret line="194" column="71" selection-start-line="194" selection-start-column="71" selection-end-line="194" selection-end-column="71" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
             <element signature="e#160#932#0" />

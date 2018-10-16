@@ -192,7 +192,7 @@ class Window(QWidget):
         Transformation = np.concatenate((np.concatenate((R, T), axis=1), Hom_coord), axis=0)
 
         logging.debug("Transformation_Matrix=\n")
-        np.savetxt('log.txt', Transformation)
+        np.savetxt('log.txt', Transformation,delimiter="   ",fmt='%1.7E')
         with open('log.txt') as f:
             for line in f:
                 logging.debug(line)
@@ -204,8 +204,9 @@ class Window(QWidget):
         To_align_Matrix_estim = np.dot(Transformation, np.transpose(MatrixA_Homm))
         To_align_Matrix_estim = To_align_Matrix_estim.T
         To_align_Matrix_estim = np.delete(To_align_Matrix_estim, (3), axis=1)
+
         logging.debug("To_align_Matrix_estim=\n")
-        np.savetxt('log.txt', To_align_Matrix_estim)
+        np.savetxt('log.txt', To_align_Matrix_estim,delimiter="   ")
         with open('log.txt') as f:
             for line in f :
                 logging.debug(line)
@@ -221,16 +222,6 @@ class Window(QWidget):
         rmse = rmse*1000 # en mm
 
         logging.debug("RMSE=" + str(rmse)+" mm")
-
-
-
-
-
-
-
-
-
-
 
 
 

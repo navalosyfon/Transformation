@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import *
-from PyQt5 import QtWidgets
+
 import sys
 import numpy as np
 import logging
@@ -107,7 +107,7 @@ class Page2(QWizardPage):
 class QTextEditLogger(logging.Handler):
     def __init__(self, parent):
         super().__init__()
-        self.widget = QtWidgets.QPlainTextEdit(parent)
+        self.widget = QPlainTextEdit(parent)
         self.widget.setReadOnly(True)
 
     def emit(self, record):
@@ -126,14 +126,16 @@ class Window(QWidget):
         self.matrixB=[]
         self.wizard = QWizard(self)
 
-        self.init_ui()
+        #self.init_ui()
 
 
-    def init_ui(self):
+    #def init_ui(self):
         self.setWindowTitle(self.title)
 
         layout = QGridLayout()
         self.setLayout(layout)
+
+
         radiobutton = QRadioButton("To align Points")
         #radiobutton.setChecked(True)
         radiobutton.country = "To align Points"
@@ -156,7 +158,6 @@ class Window(QWidget):
         layout.addWidget(radiobutton, 0, 2)
 
 
-
         logTextBox = QTextEditLogger(self)
         # You can format what is printed to text box
         # logTextBox.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
@@ -165,26 +166,72 @@ class Window(QWidget):
         logging.getLogger().setLevel(logging.DEBUG)
 
         self._button = QPushButton()
-        self._button.setText('Test Me')
+        self._button.setText('Transformation Report_ ')
 
-        layout = QtWidgets.QVBoxLayout()
+        #layout = QVBoxLayout()
         # Add the new logging box widget to the layout
-        layout.addWidget(logTextBox.widget)
-        layout.addWidget(self._button)
-        self.setLayout(layout)
+        layout.addWidget(logTextBox.widget,1,1)
+        layout.addWidget(self._button,1,0)
+        #self.setLayout(layout)
 
         # Connect signal to slot
-        self._button.clicked.connect(self.test)
-
-    def test(self):
-        logging.debug('damn, a bug___')
-        logging.debug("salut salut")
-        logging.info('something to remember')
-        logging.warning('that\'s not right')
-        logging.error('foobar')
+        self._button.clicked.connect(self.Transformation)
 
 
         self.show()
+
+    def Transformation(self):
+        transfo = RigiTransformation3D(self.matrixA, self.matrixB)
+        R, T = transfo.rigid_transform_3D()
+
+        T = T.reshape((3, 1))
+        R = R.reshape((3, 3))
+
+        Hom_coord = np.array([0, 0, 0, 1])
+        Hom_coord = Hom_coord.reshape((1, 4))
+        Transformation = np.concatenate((np.concatenate((R, T), axis=1), Hom_coord), axis=0)
+
+        logging.debug("Transformation_Matrix=\n")
+        np.savetxt('log.txt', Transformation)
+        with open('log.txt') as f:
+            for line in f:
+                logging.debug(line)
+        f.close()
+
+        n = np.shape(self.matrixA)[0]
+        Homm_coord_to_matrixA = np.ones((n, 1))
+        MatrixA_Homm = np.concatenate((self.matrixA, Homm_coord_to_matrixA), axis=1)
+        To_align_Matrix_estim = np.dot(Transformation, np.transpose(MatrixA_Homm))
+        To_align_Matrix_estim = To_align_Matrix_estim.T
+        To_align_Matrix_estim = np.delete(To_align_Matrix_estim, (3), axis=1)
+        logging.debug("To_align_Matrix_estim=\n")
+        np.savetxt('log.txt', To_align_Matrix_estim)
+        with open('log.txt') as f:
+            for line in f :
+                logging.debug(line)
+        f.close()
+
+        err = To_align_Matrix_estim - self.matrixB
+
+        resi = err
+        # print(resi)
+        err = np.multiply(err, err)
+        err = np.sum(err)
+        rmse = np.sqrt(err / n)
+        rmse = rmse*1000 # en mm
+
+        logging.debug("RMSE=" + str(rmse)+" mm")
+
+
+
+
+
+
+
+
+
+
+
 
 
     def openFileNameDialog(self):

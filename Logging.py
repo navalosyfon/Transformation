@@ -1,5 +1,5 @@
 import sys
-from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import *
 import logging
 
 # Uncomment below for terminal log messages
@@ -8,7 +8,7 @@ import logging
 class QTextEditLogger(logging.Handler):
     def __init__(self, parent):
         super().__init__()
-        self.widget = QtWidgets.QPlainTextEdit(parent)
+        self.widget = QPlainTextEdit(parent)
         self.widget.setReadOnly(True)
 
     def emit(self, record):
@@ -17,9 +17,9 @@ class QTextEditLogger(logging.Handler):
 
 
 
-class MyDialog(QtWidgets.QDialog, QtWidgets.QPlainTextEdit):
+class MyDialog(QDialog, QPlainTextEdit):
     def __init__(self, parent=None):
-        super().__init__(parent)
+        super(MyDialog,self).__init__(parent)
 
         logTextBox = QTextEditLogger(self)
         # You can format what is printed to text box
@@ -28,10 +28,10 @@ class MyDialog(QtWidgets.QDialog, QtWidgets.QPlainTextEdit):
         # You can control the logging level
         logging.getLogger().setLevel(logging.DEBUG)
 
-        self._button = QtWidgets.QPushButton(self)
+        self._button = QPushButton(self)
         self._button.setText('Test Me')
 
-        layout = QtWidgets.QVBoxLayout()
+        layout = QVBoxLayout()
         # Add the new logging box widget to the layout
         layout.addWidget(logTextBox.widget)
         layout.addWidget(self._button)
@@ -47,7 +47,7 @@ class MyDialog(QtWidgets.QDialog, QtWidgets.QPlainTextEdit):
         logging.warning('that\'s not right')
         logging.error('foobar')
 
-app = QtWidgets.QApplication(sys.argv)
+app = QApplication(sys.argv)
 dlg = MyDialog()
 dlg.show()
 dlg.raise_()

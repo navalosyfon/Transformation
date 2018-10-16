@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8a753ab-8fc4-4d20-9e1d-97bfdbaeccc5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Transformation_.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Transformation_.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logging.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sa_Transformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sa_Transformation.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,26 +53,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="Sa_Transformation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sa_Transformation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="159" column="41" selection-start-line="159" selection-start-column="41" selection-end-line="159" selection-end-column="41" />
+            <state relative-caret-position="323">
+              <caret line="194" column="35" selection-start-line="194" selection-start-column="35" selection-end-line="194" selection-end-column="35" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
                 <element signature="e#160#932#0" />
-                <element signature="e#955#1935#0" />
                 <element signature="e#1967#2498#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Logging.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logging.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="47" column="31" selection-start-line="23" selection-start-column="8" selection-end-line="47" selection-end-column="31" />
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -149,9 +151,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="SUVTransfo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Transformation_" />
@@ -170,9 +169,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="Sa_Transformation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Transformation_" />
@@ -191,9 +187,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.SUVTransfo" />
@@ -237,27 +230,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1874" height="1216" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12550336" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12679163" />
+      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Python Console" order="1" />
+      <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.3076075" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="right" id="R Packages" order="0" />
-      <window_info anchor="right" id="R Graphics" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="Run" order="5" weight="0.33355704" />
+      <window_info anchor="right" id="R Graphics" order="1" />
+      <window_info anchor="right" id="R Packages" order="0" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -269,21 +263,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add of the parameter of the estimation (RMSE, Residuals) &amp;&amp; add to data files PB et Bo.txt" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../TransfoProject/SUVTransfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="174" column="4" lean-forward="true" selection-start-line="174" selection-start-column="4" selection-end-line="180" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sa_Transformation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="159" column="41" selection-start-line="159" selection-start-column="41" selection-end-line="159" selection-end-column="41" />
+        <state relative-caret-position="2652">
+          <caret line="159" column="30" lean-forward="true" selection-start-line="159" selection-start-column="30" selection-end-line="159" selection-end-column="30" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
             <element signature="e#160#932#0" />
-            <element signature="e#955#1935#0" />
             <element signature="e#1967#2498#0" />
           </folding>
         </state>
@@ -291,10 +277,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Logging.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="47" column="31" selection-start-line="23" selection-start-column="8" selection-end-line="47" selection-end-column="31" />
+        <state relative-caret-position="765">
+          <caret line="47" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="47" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TransfoProject/SUVTransfo.py" />
+    <entry file="file://$PROJECT_DIR$/Logging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sa_Transformation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="194" column="35" selection-start-line="194" selection-start-column="35" selection-end-line="194" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#160#932#0" />
+            <element signature="e#1967#2498#0" />
           </folding>
         </state>
       </provider>
